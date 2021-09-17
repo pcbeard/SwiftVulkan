@@ -7,6 +7,8 @@
     //#include <MoltenVK/mvk_vulkan.h>
     //#include <MoltenVK/mvk_datatypes.h>
     //#include <MoltenVK/vk_mvk_moltenvk.h>
+#elif __has_include("windows_generated.h")
+    #include "windows_generated.h"
 #else
    #include <vulkan/vulkan.h>
    #include <vulkan/vk_platform.h>
